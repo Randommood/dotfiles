@@ -4,6 +4,9 @@ set nocompatible
 " modelines
 set modelines=5
 
+" font size
+set guifont=:h14
+
 " pathogen.vim ftw
 filetype off
 call pathogen#incubate()
@@ -78,12 +81,11 @@ map <leader>ntf :NERDTreeFind<CR>
 
 " Align bindings
 " map <leader>a= to :Align = (rather than :Align := )
-map <leader>a= :Align =<CR>
+map <leader>= :Align =<CR>
 map <leader>ah :Align =><CR>
 map <leader>a# :Align #<CR>
 map <leader>a{ :Align {<CR>
 map <leader>A :Align [A-Z].*<CR>:'<,'>s/\s*$//<CR><C-l>
-map <leader>= ggVG=<CR>
 map <leader>ct :set et <bar> retab<CR>
 
 " Helpers
@@ -99,7 +101,7 @@ map <leader>r18 :s/\v([0-9a-z_"']+):\s+(.*)/:\1 => \2/g<CR>
 map <leader>hs :!haml -c %:p<CR>
 
 " Set minimum window height
-set winheight=10
+set winheight=20
 
 " ctags stuff
 set tags=./tags,tags,./TAGS,TAGS

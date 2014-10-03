@@ -37,3 +37,7 @@ if [[ -s $(which keychain 2>/dev/null) ]]; then
 fi
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+# go options
+PATH=$PATH:/usr/local/go/bin
+GOPATH=$HOME/code/

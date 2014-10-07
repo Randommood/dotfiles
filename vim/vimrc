@@ -67,6 +67,9 @@ set laststatus=2
 " use bash so that rvm works
 set shell=bash
 
+" make swapfiles go to one directory
+set directory=$HOME/.vim/swapfiles//
+
 " NT bindings
 map <leader>n :NERDTreeToggle<CR>
 map <leader>ntm :NERDTreeMirror<CR>

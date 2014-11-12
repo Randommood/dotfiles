@@ -56,3 +56,6 @@ if [[ -d "/usr/local/share/chruby" ]] ; then
 
   chruby 1.9.3
 fi
+
+# added by travis gem
+[ -f /Users/inessombra/.travis/travis.sh ] && source /Users/inessombra/.travis/travis.sh

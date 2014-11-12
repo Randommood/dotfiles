@@ -3,3 +3,4 @@
 vim/.netrwhist
 bin/mate
 .ssh_config
+vim/swapfiles/*

@@ -60,7 +60,6 @@ alias r='be rspec'
 alias rff='r --fail-fast'
 alias reado="\`~/bin/ssh-reagent\`"
 
-alias enw='emacs -nw'
 alias pg-start='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
 alias pg-stop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 alias v='vagrant'
@@ -71,6 +70,7 @@ alias c="clear"
 alias retab="find . -iname '*.rb' | xargs sed -Ei '' 's/  /  /g'"
 alias ey-meta='CLOUD_URL=https://cloud-meta.engineyard.com ey'
 
+alias k="kitchen"
 alias kl="kitchen list"
 alias kd="kitchen destroy"
 alias kc="kitchen converge"

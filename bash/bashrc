@@ -39,7 +39,7 @@ fi
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 # go options
-PATH=$PATH:/usr/local/go/bin
+PATH=$PATH:/usr/local/go/bin:/usr/local/opt/coreutils/libexec/gnubin
 
 
 # added by travis gem

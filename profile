@@ -43,3 +43,4 @@ export HISTFILESIZE=9999
 export HISTSIZE=9999
 
 source "$HOME/.alias"
+eval "$(chef shell-init bash)"

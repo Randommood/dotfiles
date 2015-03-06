@@ -68,7 +68,7 @@ set laststatus=2
 set shell=bash
 
 " make swapfiles go to one directory
-set directory=$HOME/.vim/swapfiles//
+set directory=$HOME/.vim/swapfiles/
 
 " NT bindings
 map <leader>n :NERDTreeToggle<CR>
@@ -149,9 +149,6 @@ cnoreabbrev <expr> Wa ((getcmdtype() is# ':' && getcmdline() is# 'Wa')?('wa'):('
 cnoreabbrev <expr> Wqa ((getcmdtype() is# ':' && getcmdline() is# 'Wqa')?('wqa'):('Wqa'))
 cnoreabbrev <expr> E ((getcmdtype() is# ':' && getcmdline() is# 'E')?('e'):('E'))
 
-" zsh and vim don't get along
-set shell=bash
-
 " Save files when vim loses focus
 au FocusLost * :wa
 
@@ -170,4 +167,4 @@ autocmd FileType c,cpp,java,php,ruby autocmd BufWritePre <buffer> :%s/\s\+$//e
 autocmd FileType c,cpp,java,php,ruby autocmd BufWritePre <buffer> :set et | retab
 
 " set codefolding to syntax mode
-set foldmethod=syntax
+" set foldmethod=syntax

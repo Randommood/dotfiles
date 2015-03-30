@@ -7,6 +7,9 @@ set modelines=5
 " font size
 set guifont=:h14
 
+" visual guide
+set colorcolumn=80
+
 " pathogen.vim ftw
 filetype off
 call pathogen#incubate()

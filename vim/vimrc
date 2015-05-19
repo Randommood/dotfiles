@@ -8,7 +8,7 @@ set modelines=5
 set guifont=:h14
 
 " visual guide
-set colorcolumn=80
+"set colorcolumn=80
 
 " pathogen.vim ftw
 filetype off

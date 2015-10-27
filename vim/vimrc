@@ -171,3 +171,5 @@ autocmd FileType c,cpp,java,php,ruby autocmd BufWritePre <buffer> :set et | reta
 
 " set codefolding to syntax mode
 " set foldmethod=syntax
+" Golang addons
+let g:gofmt_command = "goimports"

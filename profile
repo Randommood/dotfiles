@@ -26,21 +26,14 @@ else
   export EDITOR=vim
 fi
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-
-# Ruby tweaks
-if [[ -z $(ruby -W0 -e "print RUBY_VERSION" | grep 2\.) ]]; then
-  export RUBY_FREE_MIN=500000
-  export RUBY_HEAP_MIN_SLOTS=40000
-else
-  export RUBY_GC_MALLOC_LIMIT=1000000000
-  export RUBY_GC_HEAP_FREE_SLOTS=1000000000
-  export RUBY_GC_HEAP_FREE_SLOTS=500000
-fi
-
-
 export HISTFILESIZE=9999
 export HISTSIZE=9999
 
 source "$HOME/.alias"
 eval "$(chef shell-init bash)"
+
+# The next line updates PATH for the Google Cloud SDK.
+source '/Users/inessombra/google-cloud-sdk/path.bash.inc'
+
+# The next line enables shell command completion for gcloud.
+source '/Users/inessombra/google-cloud-sdk/completion.bash.inc'

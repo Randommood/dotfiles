@@ -44,17 +44,12 @@ unsetopt correct
 unsetopt correct_all
 source ~/.alias
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-
 # Chruby
 if [[ -d "/usr/local/share/chruby" ]] ; then
   source /usr/local/share/chruby/chruby.sh
   source /usr/local/share/chruby/auto.sh
 
-  chruby 1.9.3
+  chruby ruby
 fi
 
 # added by travis gem

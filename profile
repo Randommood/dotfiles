@@ -20,17 +20,12 @@ fi
 export PATH="$HOME/sbin:/usr/local/bin:$PATH:/usr/local/git/bin:/usr/local/sbin"
 
 ## Editor
-if [[ -s $(which mvim) ]]; then
-  export EDITOR=mvim
-else
-  export EDITOR=vim
-fi
+export EDITOR=vim
 
 export HISTFILESIZE=9999
 export HISTSIZE=9999
 
 source "$HOME/.alias"
-eval "$(chef shell-init bash)"
 
 # The next line updates PATH for the Google Cloud SDK.
 source '/Users/inessombra/google-cloud-sdk/path.bash.inc'

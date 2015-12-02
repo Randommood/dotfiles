@@ -2,7 +2,7 @@
 # go options
 export GOROOT=~/code/go-workspace/go
 export GOPATH=~/code/go-workspace
-PATH=$HOME/code/go-workspace/go/bin:/usr/local/go/bin:/usr/local/opt/coreutils/libexec/gnubin:$PATH
+PATH=$HOME/code/go-workspace/go/bin:/usr/local/go/bin:/usr/local/opt/coreutils/libexec/gnubin:/opt/chefdk/bin:$PATH
 
 ## source cinderella bash completions
 if [[ -d "$HOME/etc/bash_completion.d" ]] ; then
@@ -45,3 +45,4 @@ chruby ruby
 
 # hub configs
 eval "$(hub alias -s)"
+export FASTLY_USERNAME='ines'

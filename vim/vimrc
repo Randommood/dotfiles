@@ -67,7 +67,6 @@ set nobackup
 set statusline=%F%m%r%h%w\ [f:%{&ff}\ t:%Y]\ [A:\%03.3b\ H:\%02.2B]\ [P:%04l,%04v][%p%%]\ [LEN=%L]\ %{fugitive#statusline()}
 set laststatus=2
 
-" use bash so that rvm works
 set shell=bash
 
 " make swapfiles go to one directory

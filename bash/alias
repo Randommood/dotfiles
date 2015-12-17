@@ -49,6 +49,9 @@ alias gs='git status -s'
 alias gsl="GIT_PAGER=cat git log -30 --oneline --decorate --graph"
 alias gslp='git log --stat -p'
 
+# hub
+alias hpr='hub pull-request'
+
 # ruby
 alias b='bundle-hack'
 alias bi='bundle-hack install'

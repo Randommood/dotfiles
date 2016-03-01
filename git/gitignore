@@ -3,3 +3,4 @@
 .bundle
 .hold
 .vim_session
+.vscode/

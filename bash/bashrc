@@ -1,8 +1,6 @@
 #!/usr/bin/env sh
 # go options
-export GOROOT=~/code/go-workspace/go
-export GOPATH=~/code/go-workspace
-PATH=$HOME/code/go-workspace/go/bin:/usr/local/go/bin:/usr/local/opt/coreutils/libexec/gnubin:/opt/chefdk/bin:$PATH
+export PATH=:/usr/local/opt/coreutils/libexec/gnubin:/opt/chefdk/bin:$GOPATH/bin:$PATH
 
 ## source cinderella bash completions
 if [[ -d "$HOME/etc/bash_completion.d" ]] ; then
@@ -10,11 +8,7 @@ if [[ -d "$HOME/etc/bash_completion.d" ]] ; then
 fi
 
 ## Set ls options per platform
-if [[ $OSTYPE == 'linux-gnu' ]]; then
-  alias ls='ls -p --color=auto'
-elif [[ $OSTYPE == 'darwin10.0' ]]; then
-  alias ls='ls -Gp'
-fi
+alias ls='ls -p --color=auto'
 
 ## Functions
 function parse_git_dirty {
@@ -45,4 +39,7 @@ chruby ruby
 
 # hub configs
 eval "$(hub alias -s)"
-export FASTLY_USERNAME='ines'
+export FASTLY_USERNAME='randommood'
+
+#VStudio
+function code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args "$@"; }

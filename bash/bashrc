@@ -1,6 +1,14 @@
 #!/usr/bin/env sh
-# go options
-export PATH=:/usr/local/opt/coreutils/libexec/gnubin:/opt/chefdk/bin:$GOPATH/bin:$PATH
+# go options - from go-workspace makefile
+# this Makefile is assumed to run in a $GOPATH workspace
+export GOPATH=$HOME/code/go-workspace
+# the go target below ensures that this is a valid assumption
+export GOROOT=$GOPATH/go
+# add the verified go toolchain to the front of the path: go, gofmt, goimports, etc
+export PATH=$GOROOT/bin:$GOPATH/bin:$PATH
+
+# adding other randos
+export PATH=:/usr/local/opt/coreutils/libexec/gnubin:/opt/chefdk/bin:$PATH
 
 ## source cinderella bash completions
 if [[ -d "$HOME/etc/bash_completion.d" ]] ; then
@@ -40,6 +48,3 @@ chruby ruby
 # hub configs
 eval "$(hub alias -s)"
 export FASTLY_USERNAME='randommood'
-
-#VStudio
-function code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args "$@"; }

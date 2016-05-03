@@ -8,7 +8,7 @@ export GOROOT=$GOPATH/go
 export PATH=$GOROOT/bin:$GOPATH/bin:$PATH
 
 # adding other randos
-export PATH=:/usr/local/opt/coreutils/libexec/gnubin:/opt/chefdk/bin:$PATH
+export PATH=/Users/inessombra/code/go_appengine:/usr/local/opt/coreutils/libexec/gnubin:/opt/chefdk/bin:$PATH
 
 ## source cinderella bash completions
 if [[ -d "$HOME/etc/bash_completion.d" ]] ; then
@@ -48,3 +48,12 @@ chruby ruby
 # hub configs
 eval "$(hub alias -s)"
 export FASTLY_USERNAME='randommood'
+
+# everything GCE
+#export GOOGLE_CLIENT_EMAIL="ines-fastly-com@io---dev-env.iam.gserviceaccount.com"
+#export GOOGLE_P12_LOCATION="~/.gce/ines.p12"
+#export GOOGLE_PROJECT_ID="io---dev-env"
+#export GOOGLE_ZONE_NAME="us-central1-b"
+#export GOOGLE_INSTANCE_NAME="randommood-dev"
+#export GOOGLE_INSTANCE_TYPE="n1-standard-2"
+#export GOOGLE_DISK_SIZE="100" # gigabytes
